@@ -1,0 +1,80 @@
+body {
+	margin:0;
+	font-family: sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+}
+.wrapper {
+	width: 90%;
+	max-width: 500px;
+	margin: 0px auto;
+	padding:100px 0
+}
+
+.author {
+	-webkit-transition: all 0.7s ease-out;
+	-moz-transition: all 0.7s ease-out;
+	-o-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+}
+
+.process-bar-container {
+	padding: 10px 
+}
+
+.process-bar-background {
+	height: 30px;
+	background: #ddd;
+	border: 1px solid #bbb;
+	position: relative;
+}
+
+.process-value-container,
+.process-bar {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.process-bar {
+	z-index: 2
+}
+
+.process-bar.red {
+	background: #660000
+}
+
+.process-bar.orange {
+	background: #ff6200
+}
+
+.process-bar.yellow {
+	background: #ffe200;
+}
+
+.process-bar.lightgreen {
+	background: #7cc900
+}
+
+.process-bar.green {
+	background: #008b0b
+}
+
+.process-value-container {
+	z-index: 3;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.process-value-container.red,
+.process-value-container.orange,
+.process-value-container.yellow {
+	color: #666;
+}
+
+.process-value-container.lightgreen,
+.process-value-container.green {
+	color: #ddd
+}
